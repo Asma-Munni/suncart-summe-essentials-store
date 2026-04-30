@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import user from '@/assets/avator.png'
 import { LiaLinkSolid } from 'react-icons/lia';
+import NavLink from './NavLink';
 
 const Navbar = () => {
     return (
@@ -20,9 +21,9 @@ const Navbar = () => {
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
                         >
-                            <li><Link className='btn bg-amber-50' href={"/"}>Home</Link></li>
-                            <li><Link className='btn bg-amber-50' href={"/products"}>Products</Link></li>
-                            <li><Link className='btn bg-amber-50' href={"/my-profile"}>My Profile</Link></li>
+                            <li><NavLink className='text-amber-600 hover:bg-amber-500 hover:text-white' href={"/"}>Home</NavLink></li>
+                            <li><NavLink className='hover:bg-amber-500 hover:text-white' href={"/products"}>Products</NavLink></li>
+                            <li><NavLink className='hover:bg-amber-500 hover:text-white' href={"/my-profile"}>My Profile</NavLink></li>
                         </ul>
                     </div>
                     <Image
@@ -33,10 +34,10 @@ const Navbar = () => {
                     />
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className='flex justify-between items-center gap-2 text-gray-700'>
-                        <li><Link className='btn bg-amber-50' href={"/"}>Home</Link></li>
-                        <li><Link className='btn bg-amber-50' href={"/products"}>Products</Link></li>
-                        <li><Link className='btn bg-amber-50' href={"/my-profile"}>My Profile</Link></li>
+                    <ul className='flex justify-between items-center gap-4 text-gray-700'>
+                        <li><NavLink className='text-amber-600' href={"/"}>Home</NavLink></li>
+                        <li><NavLink className='' href={"/products"}>Products</NavLink></li>
+                        <li><NavLink className='' href={"/my-profile"}>My Profile</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end flex gap-2">

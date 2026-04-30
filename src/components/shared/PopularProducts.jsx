@@ -1,11 +1,61 @@
-import React from 'react';
+"use client"
+
+import React, { useEffect, useState } from 'react';
+
+async function getProducts() {
+  const res = await fetch("http://localhost:3000/products.json");
+  const data = await res.json();
+  return data.products;
+}
 
 const PopularProducts = () => {
-    return (
-        <div>
-            3 popular products
-        </div>
-    );
+  const [products, setProducts] = useState([]);
+  
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const products = await getProducts();
+      setProducts(products);
+    };
+    
+    fetchProducts();
+  }, []);
+
+  // Limit to the first 3 products
+  const limitedProducts = products.slice(0, 3);
+
+  return (
+    <div className='w-11/12 mx-auto'>
+      <h1 className='font-bold text-3xl text-center mb-6 mt-6'>Three Popular Products</h1>
+      <div className='grid md:grid-cols-3 gap-2 justify-center items-center'>
+        {limitedProducts.map((product) => (
+          <div
+            key={product.id}
+            className="card bg-base-100 w-96 shadow-sm"
+          >
+            <figure>
+              <img
+                className='h-50 w-100'
+                src={product.image}
+                alt={product.name}
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">{product.name}</h2>
+              <h2 className='font-bold'>Brand: <span className='text-gray-600'>{product.brand}</span></h2>
+              <h2 className='font-bold'>Price: <span className='text-gray-600'>{product.price}</span></h2>
+              <h2 className='font-bold'>Rating: <span className='text-gray-600'>{product.rating}</span></h2>
+              <h2 className='font-bold'>Stock: <span className='text-gray-600'>{product.stock}</span></h2>
+              <h2 className='font-bold'>Category: <span className='text-gray-600'>{product.category}</span></h2>
+              <p className='text-gray-600'>{product.description}</p>
+              <div className="card-actions justify-end">
+                <button className="btn bg-amber-500 hover:bg-amber-600 text-white">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default PopularProducts;

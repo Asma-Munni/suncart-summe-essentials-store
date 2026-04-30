@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "UV Protection Sunglasses",
+      "brand": "SunShade",
+      "price": 15,
+      "rating": 4.7,
+      "stock": 10,
+      "description": "Stylish UV protection sunglasses perfect for summer outings.",
+      "image": "https://i.ibb.co.com/Y7xfG95d/photo-1511499767150-a48a237f0083.avif",
+      "category": "Accessories"
+    },
+    {
+      "id": 2,
+      "name": "Hydrating Lip Balm",
+      "brand": "GlowCare",
+      "price": 8,
+      "rating": 4.5,
+      "stock": 25,
+      "description": "Moisturizing lip balm that keeps your lips soft and protected in hot weather.",
+      "image": "https://i.ibb.co.com/27M88XsM/realistic-ipstick-ads-78871-43.avif",
+      "category": "Makeup"
+    },
+    {
+      "id": 3,
+      "name": "Waterproof Mascara",
+      "brand": "BeautyWave",
+      "price": 12,
+      "rating": 4.6,
+      "stock": 18,
+      "description": "Long-lasting waterproof mascara, ideal for beach days and summer events.",
+      "image": "https://i.ibb.co.com/dspfYtJQ/lipstick-mascara-with-fold-paper-logo-makeup-set-illustration-1008433-1673.jpg",
+      "category": "Makeup"
+    },
+    {
+      "id": 4,
+      "name": "Beach Umbrella",
+      "brand": "SunnyNest",
+      "price": 30,
+      "rating": 4.8,
+      "stock": 7,
+      "description": "Large and durable umbrella for staying cool and protected under the summer sun.",
+      "image": "https://i.ibb.co.com/fYQX51d6/umbrella.jpg",
+      "category": "Outdoor"
+    },
+    {
+      "id": 5,
+      "name": "Tinted Sunscreen SPF 50",
+      "brand": "SunGlow",
+      "price": 20,
+      "rating": 4.9,
+      "stock": 15,
+      "description": "Lightweight tinted sunscreen with SPF 50 for daily summer skin protection.",
+      "image": "https://i.ibb.co.com/3nW0fWt/set-cosmetics-23-2147801601.avif",
+      "category": "Skincare"
+    },
+    {
+      "id": 6,
+      "name": "Straw Summer Hat",
+      "brand": "BreezeStyle",
+      "price": 18,
+      "rating": 4.4,
+      "stock": 12,
+      "description": "Classic straw hat designed to keep you stylish and shaded during summer.",
+      "image": "https://i.ibb.co.com/PsQrxdLR/conner-hats-boating-hats-tarpon-springs-recycled-floating-sailing-hat-24837563592-1024x1024-293623c0.webp",
+      "category": "Fashion"
+    }
+  ]
+}
