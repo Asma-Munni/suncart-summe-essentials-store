@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 async function getProducts() {
@@ -33,7 +34,9 @@ const PopularProducts = () => {
             className="card bg-base-100 w-96 shadow-sm"
           >
             <figure>
-              <img
+              <Image
+              height={200}
+              width={300}
                 className='h-50 w-100'
                 src={product.image}
                 alt={product.name}
@@ -41,14 +44,12 @@ const PopularProducts = () => {
             </figure>
             <div className="card-body">
               <h2 className="card-title">{product.name}</h2>
-              <h2 className='font-bold'>Brand: <span className='text-gray-600'>{product.brand}</span></h2>
+              
               <h2 className='font-bold'>Price: <span className='text-gray-600'>{product.price}</span></h2>
               <h2 className='font-bold'>Rating: <span className='text-gray-600'>{product.rating}</span></h2>
-              <h2 className='font-bold'>Stock: <span className='text-gray-600'>{product.stock}</span></h2>
-              <h2 className='font-bold'>Category: <span className='text-gray-600'>{product.category}</span></h2>
-              <p className='text-gray-600'>{product.description}</p>
               <div className="card-actions justify-end">
-                <button className="btn bg-amber-500 hover:bg-amber-600 text-white">Buy Now</button>
+                <button className="btn bg-amber-500 hover:bg-amber-600 text-white">View Details button
+</button>
               </div>
             </div>
           </div>

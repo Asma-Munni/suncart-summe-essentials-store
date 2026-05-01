@@ -1,12 +1,19 @@
+
+
+import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 async function getProducts  () {
 const res = await fetch("http://localhost:3000/products.json");
 const data = await res.json();
 return data.products;
+
 }
 
+
 const Products = async() => {
+  
     const products = await getProducts();
     console.log(products, "products");
     return (
@@ -17,8 +24,9 @@ const Products = async() => {
         key={product.id}
         className="card bg-base-100 w-96 shadow-sm ">
   <figure>
-    <img
-      className='h-50 w-100'
+    <Image
+      height={50}
+      width={200}
       src={product.image}
       alt={product.name} />
   </figure>
@@ -31,7 +39,9 @@ const Products = async() => {
     <h2 className='font-bold'>Category: <span className='text-gray-600'>{product.category}</span></h2>
     <p className='text-gray-600'>{product.description}</p>
     <div className="card-actions justify-end">
-      <button className="btn bg-amber-500 hover:bg-amber-600 text-white">Buy Now</button>
+      <Link 
+      
+      href={`/products/${product.id}`}>See Details</Link>
     </div>
   </div>
 </div>
