@@ -27,6 +27,7 @@ const Products = async() => {
     <Image
       height={50}
       width={200}
+       className='h-50 w-100'
       src={product.image}
       alt={product.name} />
   </figure>
