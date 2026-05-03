@@ -5,7 +5,7 @@ import Link from 'next/link';
 import React from 'react';
 
 async function getProducts  () {
-const res = await fetch("http://localhost:3000/products.json");
+const res = await fetch("http://localhost:3000/products.json",{cache:"no-store"});
 const data = await res.json();
 return data.products;
 
