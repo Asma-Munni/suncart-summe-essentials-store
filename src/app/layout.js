@@ -1,3 +1,6 @@
+import dns from "dns";
+dns.setDefaultResultOrder("ipv4first");
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 

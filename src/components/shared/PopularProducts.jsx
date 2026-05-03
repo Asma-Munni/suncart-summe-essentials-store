@@ -27,7 +27,7 @@ const PopularProducts = () => {
   return (
     <div className='w-11/12 mx-auto'>
       <h1 className='font-bold text-3xl text-center mb-6 mt-6'>Three Popular Products</h1>
-      <div className='grid md:grid-cols-3 gap-2 justify-center items-center'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 justify-center items-center'>
         {limitedProducts.map((product) => (
           <div
             key={product.id}

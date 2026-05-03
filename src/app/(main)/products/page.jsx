@@ -38,7 +38,7 @@ const Products = async() => {
     <h2 className='font-bold'>Rating: <span className='text-gray-600'>{product.rating}</span></h2>
     <h2 className='font-bold'>Stock: <span className='text-gray-600'>{product.stock}</span></h2>
     <h2 className='font-bold'>Category: <span className='text-gray-600'>{product.category}</span></h2>
-    <p className='text-gray-600'>{product.description}</p>
+   
     <div className="card-actions justify-end">
       <Link 
       
