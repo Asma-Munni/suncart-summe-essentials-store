@@ -4,6 +4,7 @@ import Banner from "@/components/shared/Banner";
 import PopularProducts from "@/components/shared/PopularProducts";
 
 import ExtraSections from "@/components/shared/ExtraSections";
+import TopBrands from "@/components/shared/TopBrands";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
        <PopularProducts></PopularProducts>
        
        <ExtraSections></ExtraSections>
+       <TopBrands></TopBrands>
 
     </div>
   
