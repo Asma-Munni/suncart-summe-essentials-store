@@ -103,14 +103,14 @@ const Navbar = () => {
                 className="rounded-full"
               />
 
-              <button className="btn bg-amber-500 text-white hover:bg-amber-600" onClick={async()=>await authClient.signOut()}>
+              <button className="btn bg-gradient-to-r from-amber-400 to-amber-600 text-white hover:bg-amber-600" onClick={async()=>await authClient.signOut()}>
                 Logout
               </button>
             </>
           ) : (
             <Link
               href="/login"
-              className="btn bg-amber-500 text-white hover:bg-amber-600"
+              className="btn bg-gradient-to-r from-amber-400 to-amber-600 text-white hover:bg-amber-600"
             >
               Login
             </Link>

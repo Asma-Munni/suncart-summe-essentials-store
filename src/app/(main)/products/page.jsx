@@ -41,7 +41,7 @@ const Products = async() => {
    
     <div className="card-actions justify-end">
       <Link 
-      
+      className='bg-gradient-to-r from-amber-400 to-amber-600 text-white btn'
       href={`/products/${product.id}`}>See Details</Link>
     </div>
   </div>

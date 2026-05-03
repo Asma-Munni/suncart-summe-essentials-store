@@ -6,7 +6,7 @@ const ExtraSections = () => {
       {/* Summer Care Tips Section */}
       <section className="mb-20">
         <div className="text-center mb-10">
-          <p className="text-orange-500 font-semibold">Summer Guide</p>
+          <p className="text-amber-600 font-semibold">Summer Guide</p>
           <h2 className="text-3xl md:text-4xl font-bold mt-2">
             Summer Care Tips
           </h2>

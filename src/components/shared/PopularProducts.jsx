@@ -48,7 +48,7 @@ const PopularProducts = () => {
               <h2 className='font-bold'>Price: <span className='text-gray-600'>{product.price}</span></h2>
               <h2 className='font-bold'>Rating: <span className='text-gray-600'>{product.rating}</span></h2>
               <div className="card-actions justify-end">
-                <button className="btn bg-amber-500 hover:bg-amber-600 text-white">View Details button
+                <button className="btn bg-gradient-to-r from-amber-400 to-amber-600 hover:bg-amber-800 text-white">View Details button
 </button>
               </div>
             </div>
