@@ -1,4 +1,8 @@
 import React from 'react';
+import waterDrop from '@/assets/waterDrop.png'
+import sunScreen from '@/assets/sun.png'
+import cloths from '@/assets/cloths.png'
+import Image from 'next/image';
 
 const ExtraSections = () => {
     return (
@@ -18,7 +22,13 @@ const ExtraSections = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="card bg-base-100 shadow-md hover:shadow-xl transition-all duration-300 border border-orange-100">
             <div className="card-body text-center">
-              <div className="text-5xl mb-4">💧</div>
+              <div className="text-5xl flex justify-center ">
+                <Image
+                src={waterDrop}
+                height={50}
+                width={50}
+                alt='water drop'
+              /></div>
               <h3 className="text-xl font-bold">Stay Hydrated</h3>
               <p className="text-gray-500">
                 Drink enough water throughout the day to keep your body fresh and active in summer.
@@ -28,7 +38,13 @@ const ExtraSections = () => {
 
           <div className="card bg-base-100 shadow-md hover:shadow-xl transition-all duration-300 border border-orange-100">
             <div className="card-body text-center">
-              <div className="text-5xl mb-4">☀️</div>
+             <div className="text-5xl flex justify-center ">
+                <Image
+                src={sunScreen}
+                height={50}
+                width={50}
+                alt='Sun screen'
+              /></div>
               <h3 className="text-xl font-bold">Use Sunscreen</h3>
               <p className="text-gray-500">
                 Apply sunscreen before going outside to protect your skin from harmful UV rays.
@@ -38,7 +54,13 @@ const ExtraSections = () => {
 
           <div className="card bg-base-100 shadow-md hover:shadow-xl transition-all duration-300 border border-orange-100">
             <div className="card-body text-center">
-              <div className="text-5xl mb-4">👕</div>
+              <div className="text-5xl flex justify-center ">
+                <Image
+                src={cloths}
+                height={100}
+                width={100}
+                alt='Cloths'
+              /></div>
               <h3 className="text-xl font-bold">Wear Light Clothes</h3>
               <p className="text-gray-500">
                 Choose breathable cotton outfits to stay cool and comfortable in hot weather.

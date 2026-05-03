@@ -1,4 +1,8 @@
 import React from "react";
+import sunglass from '@/assets/sunglass.png'
+import umbrella from '@/assets/umbrella.png'
+import soap from '@/assets/soap.png'
+import Image from "next/image";
 
 const TopBrands = () => {
   return (
@@ -20,7 +24,13 @@ const TopBrands = () => {
         {/* Brand Card 1 */}
         <div className="card bg-base-100 shadow-md hover:shadow-xl transition-all duration-300 border border-orange-100 animate__animated animate__fadeInLeft">
           <div className="card-body text-center">
-            <div className="text-5xl mb-4">🕶️</div>
+            <div className="text-5xl flex justify-center ">
+                            <Image
+                            src={sunglass}
+                            height={150}
+                            width={150}
+                            alt='water drop'
+                          /></div>
 
             <h3 className="text-xl font-bold">SunShade</h3>
 
@@ -44,7 +54,13 @@ const TopBrands = () => {
         {/* Brand Card 2 */}
         <div className="card bg-base-100 shadow-md hover:shadow-xl transition-all duration-300 border border-orange-100 animate__animated animate__fadeInUp">
           <div className="card-body text-center">
-            <div className="text-5xl mb-4">🧴</div>
+             <div className="text-5xl flex justify-center ">
+                            <Image
+                            src={soap}
+                            height={150}
+                            width={150}
+                            alt='water drop'
+                          /></div>
 
             <h3 className="text-xl font-bold">GlowCare</h3>
 
@@ -68,7 +84,13 @@ const TopBrands = () => {
         {/* Brand Card 3 */}
         <div className="card bg-base-100 shadow-md hover:shadow-xl transition-all duration-300 border border-orange-100 animate__animated animate__fadeInRight">
           <div className="card-body text-center">
-            <div className="text-5xl mb-4">🏖️</div>
+             <div className="text-5xl flex justify-center ">
+                            <Image
+                            src={umbrella}
+                            height={50}
+                            width={50}
+                            alt='water drop'
+                          /></div>
 
             <h3 className="text-xl font-bold">BeachFlex</h3>
 

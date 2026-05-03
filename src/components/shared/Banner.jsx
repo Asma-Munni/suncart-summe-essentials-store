@@ -16,7 +16,7 @@ const Banner = () => {
     />
     <div>
       <h1 className="animate__animated animate__fadeInUp
-      text-5xl font-bold text-center md:text-start ">Summer Essentials Store</h1>
+      text-4xl font-bold text-center md:text-start ">Summer Essentials Store</h1>
      <h2 className="text-4xl md:text-6xl font-bold text-orange-500 animate__animated animate__bounceInDown">
   Summer Sale 50% OFF
 </h2>

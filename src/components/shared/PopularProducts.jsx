@@ -25,13 +25,13 @@ const PopularProducts = () => {
   const limitedProducts = products.slice(0, 3);
 
   return (
-    <div className='w-11/12 mx-auto'>
+    <div className='w-11/12 mx-auto my-16'>
       <h1 className='font-bold text-3xl text-center mb-6 mt-6'>Three Popular Products</h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 justify-center items-center'>
         {limitedProducts.map((product) => (
           <div
             key={product.id}
-            className="card bg-base-100 w-96 shadow-sm"
+            className="card bg-base-100 w-96 mx-auto shadow-sm"
           >
             <figure>
               <Image
