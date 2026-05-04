@@ -5,7 +5,7 @@ import hero from '@/assets/hero1.png'
 const Banner = () => {
     return (
         <div>
-          <div className="hero bg-gradient-to-r from-amber-50 to-amber-100 min-h-screen w-11/12 mx-auto">
+          <div className="hero bg-gradient-to-r from-amber-50 to-amber-100  w-11/12 mx-auto py-20">
   <div className="hero-content flex-col lg:flex-row-reverse gap-10">
     <Image
      src={hero}

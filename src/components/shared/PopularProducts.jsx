@@ -1,6 +1,7 @@
 "use client"
 
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 async function getProducts() {
@@ -55,6 +56,12 @@ const PopularProducts = () => {
           </div>
         ))}
       </div>
+       <div className='flex justify-center items-center mt-10 animate__animated animate__pulse animate__infinite'>
+        <Link href={"/products"}><button className="btn  bg-gradient-to-r from-amber-400 to-amber-600 hover:bg-amber-800 text-white">See All Products
+</button></Link>
+        </div>
+      
+
     </div>
   );
 };
