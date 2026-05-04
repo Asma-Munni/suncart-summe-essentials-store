@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const TopBrands = () => {
   return (
-    <section className="mb-20">
+    <section className="mb-20 w-11/12 mx-auto">
       <div className="text-center mb-10 animate__animated animate__fadeInDown">
         <p className="text-amber-600 font-semibold">Featured Brands</p>
 
